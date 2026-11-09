@@ -1,0 +1,350 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For Tejuu ❤️</title>
+
+<style>
+*{
+ margin:0;
+ padding:0;
+ box-sizing:border-box;
+}
+
+body{
+ background:linear-gradient(160deg,#160b28,#451638,#190b2b);
+ color:white;
+ font-family:Georgia,serif;
+ text-align:center;
+ overflow-x:hidden;
+}
+
+section{
+ min-height:100vh;
+ padding:35px 18px;
+ display:flex;
+ flex-direction:column;
+ justify-content:center;
+ align-items:center;
+}
+
+.hidden{display:none!important}
+
+h1{
+ color:#ffdc9c;
+ font-size:36px;
+ margin:20px 0;
+ text-shadow:0 0 20px #ffae44;
+}
+
+h2{
+ color:#ffdca0;
+ margin:20px 0;
+}
+
+p{
+ color:#ffe7dc;
+ font-size:17px;
+ line-height:1.9;
+}
+
+.diya{
+ font-size:75px;
+ animation:glow 1.5s infinite alternate;
+}
+
+@keyframes glow{
+ to{filter:drop-shadow(0 0 25px gold)}
+}
+
+button{
+ background:linear-gradient(45deg,#ffb347,#ffe6a1);
+ color:#42132d;
+ border:0;
+ padding:15px 28px;
+ border-radius:40px;
+ font-size:16px;
+ font-weight:bold;
+ margin:22px 0;
+ cursor:pointer;
+ box-shadow:0 0 25px #ffb347;
+}
+
+.heart{
+ font-size:42px;
+ animation:beat 1s infinite;
+}
+
+@keyframes beat{
+ 50%{transform:scale(1.25)}
+}
+
+/* Photo gallery */
+
+.gallery{
+ display:grid;
+ grid-template-columns:repeat(2,1fr);
+ gap:14px;
+ width:100%;
+ max-width:500px;
+ margin:25px auto;
+}
+
+.photo{
+ background:#ffffff13;
+ padding:8px;
+ border:1px solid #f2c879;
+ border-radius:16px;
+ box-shadow:0 0 18px #f7c46a30;
+ transition:.4s;
+}
+
+.photo:hover{
+ transform:scale(1.04);
+}
+
+.photo img{
+ width:100%;
+ height:190px;
+ object-fit:cover;
+ border-radius:11px;
+}
+
+.photo p{
+ font-size:14px;
+ color:#ffdda1;
+ padding:9px 0;
+}
+
+.message{
+ max-width:480px;
+ padding:25px 20px;
+ background:#ffffff12;
+ border:1px solid #eac477;
+ border-radius:20px;
+ line-height:1.9;
+ margin:20px auto;
+}
+
+footer{
+ color:#ffdb9c;
+ padding:25px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- WELCOME PAGE -->
+
+<section id="welcome">
+
+<div class="diya">🪔</div>
+
+<p>✨ A LITTLE SURPRISE FOR SOMEONE SPECIAL ✨</p>
+
+<h1>Happy Diwali<br>Tejuu ❤️</h1>
+
+<p>
+Is Diwali tumhare liye<br>
+kuch special banaya hai...
+<br><br>
+Are you ready? 🥹
+</p>
+
+<div class="heart">💗</div>
+
+<button onclick="openGift()">
+Open Your Surprise 🎁
+</button>
+
+</section>
+
+
+<!-- MAIN GIFT PAGE -->
+
+<section id="gift" class="hidden">
+
+<div class="diya">🪔✨</div>
+
+<h1>For You, Tejuu ❤️</h1>
+
+<p>
+Kuch log life mein aate hain,<br>
+aur dheere-dheere special ban jaate hain.
+<br><br>
+You are one of those beautiful people. 💗
+</p>
+
+<div class="heart">❤️</div>
+
+<h2>Your Beautiful Memories 📸</h2>
+
+<p>Six photos, countless beautiful feelings.</p>
+
+
+<!-- SIX PHOTOS -->
+
+<div class="gallery">
+
+<div class="photo">
+<img src="photo1.jpg" alt="Tejuu 1">
+<p>Beautiful Smile ❤️</p>
+</div>
+
+<div class="photo">
+<img src="photo2.jpg" alt="Tejuu 2">
+<p>Sweet Memories 🥰</p>
+</div>
+
+<div class="photo">
+<img src="photo3.jpg" alt="Tejuu 3">
+<p>Just Beautiful 🌸</p>
+</div>
+
+<div class="photo">
+<img src="photo4.jpg" alt="Tejuu 4">
+<p>Special Moments 💗</p>
+</div>
+
+<div class="photo">
+<img src="photo5.jpg" alt="Tejuu 5">
+<p>Keep Smiling 😊</p>
+</div>
+
+<div class="photo">
+<img src="photo6.jpg" alt="Tejuu 6">
+<p>Always Special 🥹</p>
+</div>
+
+</div>
+
+
+<!-- EMOTIONAL MESSAGE -->
+
+<h2>A Message From My Heart 💌</h2>
+
+<div class="message">
+
+<h2>Dear Tejuu ❤️</h2>
+
+<p>
+Pata nahi kaise, but tum mere liye
+bahut special ho.
+<br><br>
+
+Tumhari smile hamesha bani rahe,
+tumhari life khushiyon se bhari rahe.
+<br><br>
+
+I may not always have perfect words,
+but I genuinely wish the best for you.
+<br><br>
+
+May all your dreams come true.
+May you always stay happy and blessed.
+<br><br>
+
+<strong>
+You deserve all the beautiful things
+in this world. ❤️
+</strong>
+</p>
+
+<div class="heart">💗</div>
+
+<p>Happy Diwali, Tejuu! 🪔</p>
+
+</div>
+
+<button onclick="lastSurprise()">
+One Last Surprise 🥹
+</button>
+
+</section>
+
+
+<!-- LAST SURPRISE -->
+
+<section id="last" class="hidden">
+
+<div class="diya">🪔💗🪔</div>
+
+<h1>Just For You ❤️</h1>
+
+<div class="message">
+
+<p>
+Dear Tejuu,
+<br><br>
+
+Ye gift chhota sa hai,
+lekin iske peeche feelings bahut saari hain.
+<br><br>
+
+Some people make life more beautiful
+just by being in it.
+<br><br>
+
+Thank you for being someone special.
+<br><br>
+
+<strong>
+Always Keep Smiling! ❤️
+</strong>
+</p>
+
+<div class="heart">🥹❤️</div>
+
+<h2>Happy Diwali Tejuu!</h2>
+
+<p>Lots of happiness and love for you. ✨</p>
+
+</div>
+
+<footer>
+Made with ❤️ Just For You
+</footer>
+
+<button onclick="location.reload()">
+Replay Surprise ↻
+</button>
+
+</section>
+
+
+<script>
+
+function openGift(){
+ document.getElementById("welcome").classList.add("hidden");
+ document.getElementById("gift").classList.remove("hidden");
+ window.scrollTo(0,0);
+}
+
+function lastSurprise(){
+ document.getElementById("gift").classList.add("hidden");
+ document.getElementById("last").classList.remove("hidden");
+ window.scrollTo(0,0);
+}
+
+// Floating stars
+for(let i=0;i<35;i++){
+ let star=document.createElement("div");
+ star.innerHTML="✦";
+ star.style.position="fixed";
+ star.style.left=Math.random()*100+"%";
+ star.style.top=Math.random()*100+"%";
+ star.style.color="#ffda91";
+ star.style.pointerEvents="none";
+ star.style.zIndex="-1";
+ document.body.appendChild(star);
+}
+
+</script>
+
+</body>
+</html>
